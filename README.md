@@ -7,7 +7,7 @@ This project is built for the **Frontdesk Engineering Test**. It simulates an AI
 ## 🔧 Tech Stack
 
 - **Frontend**: React, TypeScript, Vite, TailwindCSS
-- **Voice & Call Simulation**: [LiveKit](https://livekit.io/)
+- **Call Simulation**: [LiveKit](https://livekit.io/)
 - **Database**: Firebase Firestore
 - **State Management**: React Context API
 
@@ -89,6 +89,7 @@ npm run dev
 
 ## 📸 Demo Screens
 -**✅ Simulated Call Interface**
+![Screenshot 2025-05-04 184451](https://github.com/user-attachments/assets/5cea3a66-b4ba-476e-a733-f8ad9bed1351)
 
 -**👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)**
 
