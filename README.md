@@ -79,7 +79,7 @@ const firebaseConfig = {
   appId: "YOUR_APP_ID",
   measurementId: "G-MEASUREMENT_ID"
 };
-
+```
 
 
 ## 4. Run the Development Server
