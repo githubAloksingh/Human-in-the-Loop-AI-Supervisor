@@ -88,13 +88,20 @@ npm run dev
 ---
 
 ## 📸 Demo Screens
--**✅ Simulated Call Interface**
+-**👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)**
 ![Screenshot 2025-05-04 184451](https://github.com/user-attachments/assets/5cea3a66-b4ba-476e-a733-f8ad9bed1351)
 
--**👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)**
+-**Pending Requests**
+![Screenshot 2025-05-04 184530](https://github.com/user-attachments/assets/2080ebe8-f59a-4240-b6f0-bb7cadc1ba00)
 
--**📚 Knowledge Base List**
+-**Resolved Requests**
+![Screenshot 2025-05-04 184610](https://github.com/user-attachments/assets/91b50508-0bba-4abb-90d8-412fc983df81)
 
+-**Knowledge Base**
+![Screenshot 2025-05-04 184623](https://github.com/user-attachments/assets/f77f420d-b7e0-4e4e-abc8-0f6f8980f661)
+
+-**Simulate Call**
+![Screenshot 2025-05-04 184637](https://github.com/user-attachments/assets/6bf700d3-7b9d-4a2f-99a7-1f4dca8407e5)
 
 ## 📩 Contact
 - Built by Alok Singh for the Frontdesk Engineering Test.
