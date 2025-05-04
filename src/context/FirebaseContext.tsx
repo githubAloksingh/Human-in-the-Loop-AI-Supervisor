@@ -17,13 +17,13 @@ import {
 
 // Firebase configuration - in a real app, these would be in environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBh9iDKoIvI3-k5W5kxliEe8F6DNcIlo8Y",
-  authDomain: "prep-master-e1138.firebaseapp.com",
-  projectId: "prep-master-e1138",
-  storageBucket: "prep-master-e1138.firebasestorage.app",
-  messagingSenderId: "879453703282",
-  appId: "1:879453703282:web:386b6d6c0ccf7b90ea86eb",
-  measurementId: "G-0C2WTNVCCT"
+  apiKey: "AIzaSyDUMMY-KEY-1234567890ABCDEFGHIJK",
+  authDomain: "demo-project.firebaseapp.com",
+  projectId: "demo-project-id",
+  storageBucket: "demo-project.appspot.com",
+  messagingSenderId: "123456789012",
+  appId: "1:123456789012:web:abcdef1234567890",
+  measurementId: "G-ABCDEFG123"
 };
 
 // Initialize Firebase
