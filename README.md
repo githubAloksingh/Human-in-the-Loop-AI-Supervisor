@@ -8,10 +8,8 @@ This project is built for the **Frontdesk Engineering Test**. It simulates an AI
 
 - **Frontend**: React, TypeScript, Vite, TailwindCSS
 - **Voice & Call Simulation**: [LiveKit](https://livekit.io/)
-- **AI Integration**: OpenAI API (ChatGPT)
 - **Database**: Firebase Firestore
 - **State Management**: React Context API
-- **Utilities**: Web Speech API (Speech-to-Text and Text-to-Speech)
 
 ---
 
@@ -21,13 +19,13 @@ This project is built for the **Frontdesk Engineering Test**. It simulates an AI
 
 - AI agent receives a call via a simulated call component.
 - Uses `LiveKit` integration to simulate a call.
-- Responds with known answers using OpenAI prompt context.
+- Responds with known answers context.
 - Escalates unknown questions via a "Help Request".
 
 ### ✋ Help Request Lifecycle
 
 - AI creates a help request in Firestore when it doesn't know the answer.
-- Notifies the supervisor with a console log (simulated texting).
+- Notifies the supervisor
 - Tells the caller: “Let me check with my supervisor and get back to you.”
 
 ### 👨‍💻 Supervisor Dashboard
@@ -51,118 +49,66 @@ Accessible admin panel with:
 - Unanswered help requests are marked as **Unresolved** after a timeout.
 - Status lifecycle: `Pending → Resolved / Unresolved`.
 
----
+# 🧠 Human-in-the-Loop AI Supervisor
 
-## 🗂 Project Structure
-
-project-root/
-├── .bolt/ # Firebase Bolt rules
-├── node_modules/
-├── src/
-│ ├── components/ # UI components (Button, Card, etc.)
-│ │ ├── Badge.tsx
-│ │ ├── Button.tsx
-│ │ └── Card.tsx
-│ ├── context/ # App-wide Contexts
-│ │ ├── AppContext.tsx
-│ │ └── FirebaseContext.tsx
-│ ├── knowledge/ # Learned Answers UI
-│ │ └── KnowledgeItem.tsx
-│ ├── layout/ # Layout components
-│ │ ├── Header.tsx
-│ │ ├── Layout.tsx
-│ │ └── Sidebar.tsx
-│ ├── pages/ # Pages in admin panel
-│ │ ├── Dashboard.tsx
-│ │ ├── KnowledgeBase.tsx
-│ │ ├── PendingRequests.tsx
-│ │ ├── ResolvedRequests.tsx
-│ │ └── SimulatedCall.tsx
-│ ├── requests/ # Help request UI
-│ │ └── RequestCard.tsx
-│ ├── utils/ # Utility functions
-│ │ ├── livekit.ts # LiveKit config
-│ │ └── prompts.ts # Prompt logic for OpenAI
-│ ├── App.tsx # Main app layout
-│ ├── index.css
-│ └── main.tsx
-└── README.md
-
-yaml
-Copy
-Edit
+This is a simulated AI support system built for the Frontdesk Engineering Test. It features a real-time call simulation interface using LiveKit, an AI agent, escalation to a human supervisor, and a dynamic knowledge base.
 
 ---
 
 ## 🧪 How to Run Locally
 
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/your-username/hitl-ai-supervisor.git
-   cd hitl-ai-supervisor
-Install dependencies:
+### 1. Clone the Repository
 
-bash
-Copy
-Edit
+git clone https://github.com/githubAloksingh/Human-in-the-Loop-AI-Supervisor.git
+cd Human-in-the-Loop-AI-Supervisor
+
+### 2. Install Dependencies
 npm install
-Setup Firebase:
 
-Create a Firebase project and Firestore DB.
+### 3. Set Up Firebase
 
-Add your Firebase config to FirebaseContext.tsx.
+Create a Firebase project at firebase.google.com.
+Enable Firestore in the Firebase Console.
+Replace the configuration in src/context/FirebaseContext.tsx with your Firebase project's config:
 
-Configure LiveKit (optional):
+const firebaseConfig = {
+  apiKey: "YOUR_DEMO_API_KEY",
+  authDomain: "your-project-id.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project-id.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "G-MEASUREMENT_ID"
+};
+🔐 Use demo or environment variables to keep your credentials secure in production.
 
-Use LiveKit's free dev server or mocked events.
-
-Update livekit.ts for token and connection setup.
-
-Start the app:
-
-bash
-Copy
-Edit
+## 4. Run the Development Server
 npm run dev
+
 📸 Demo Screens
-Simulated Call Interface
+✅ Simulated Call Interface
 
-Supervisor Dashboard (Pending/Resolved)
+👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)
 
-Knowledge Base List
+📚 Knowledge Base List
 
-You can view the full video demo in the repository or submission link.
+💡 Features
 
-🧠 Design Decisions
-Decoupled Contexts: AppContext handles global app state; FirebaseContext abstracts Firestore logic.
+AI response generation and help request escalation
 
-Clean Lifecycle: Help requests are structured with status, question, createdAt, respondedAt, resolvedBy, and responseText.
+Human supervisor UI with pending and resolved states
 
-Knowledge Base: Simple JSON storage per learned question-answer pair, scalable to vector DBs later.
-
-Error Handling: Includes try/catch blocks for async operations with fallback logs.
-
-🛠 Improvements (Future Work)
-Live transfer during calls when supervisor is available (Phase 2).
-
-User auth (admin login).
-
-Replace console-based alerts with real-time push via WebSockets or Firebase triggers.
-
-Vector-based semantic search for knowledge matching.
+Firestore-powered knowledge base with update capabilities
 
 📩 Contact
 Built by Alok Singh for the Frontdesk Engineering Test.
+Feel free to reach out if you'd like to chat about this project or collaborate!
 
-Feel free to reach out if you’d like to chat about this project!
+Let me know if you’d like to add a license section, tech stack badges, or screenshots as well!
 
-📄 License
-This project is for evaluation purposes and is not intended for production use.
 
-yaml
-Copy
-Edit
 
----
 
-Let me know if you want me to help you generate a GIF demo or add images in the README.
+
+
+
