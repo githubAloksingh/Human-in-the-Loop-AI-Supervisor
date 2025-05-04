@@ -116,9 +116,7 @@ npm run dev
 ## 📩 Contact
 - Built by Alok Singh for the Frontdesk Engineering Test.
 - Feel free to reach out if you'd like to chat about this project or collaborate!
-
-
-
+- **Email:** [alok.singh8158@gmail.com](mailto:alok.singh8158@gmail.com)
 
 
 
