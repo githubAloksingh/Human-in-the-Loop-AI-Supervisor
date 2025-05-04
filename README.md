@@ -57,8 +57,8 @@ Accessible admin panel with:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/githubAloksingh/Human-in-the-Loop-AI-Supervisor.git
-cd Human-in-the-Loop-AI-Supervisor
+- git clone https://github.com/githubAloksingh/Human-in-the-Loop-AI-Supervisor.git
+- cd Human-in-the-Loop-AI-Supervisor
 
 ### 2. Install Dependencies
 npm install
@@ -69,6 +69,7 @@ Create a Firebase project at firebase.google.com.
 Enable Firestore in the Firebase Console.
 Replace the configuration in src/context/FirebaseContext.tsx with your Firebase project's config:
 
+```ts
 const firebaseConfig = {
   apiKey: "YOUR_DEMO_API_KEY",
   authDomain: "your-project-id.firebaseapp.com",
@@ -78,31 +79,26 @@ const firebaseConfig = {
   appId: "YOUR_APP_ID",
   measurementId: "G-MEASUREMENT_ID"
 };
-🔐 Use demo or environment variables to keep your credentials secure in production.
+
+
 
 ## 4. Run the Development Server
 npm run dev
 
-📸 Demo Screens
-✅ Simulated Call Interface
+---
 
-👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)
+## 📸 Demo Screens
+-**✅ Simulated Call Interface**
 
-📚 Knowledge Base List
+-**👨‍💻 Supervisor Dashboard (Pending/Resolved Requests)**
 
-💡 Features
+-**📚 Knowledge Base List**
 
-AI response generation and help request escalation
 
-Human supervisor UI with pending and resolved states
+## 📩 Contact
+- Built by Alok Singh for the Frontdesk Engineering Test.
+- Feel free to reach out if you'd like to chat about this project or collaborate!
 
-Firestore-powered knowledge base with update capabilities
-
-📩 Contact
-Built by Alok Singh for the Frontdesk Engineering Test.
-Feel free to reach out if you'd like to chat about this project or collaborate!
-
-Let me know if you’d like to add a license section, tech stack badges, or screenshots as well!
 
 
 
