@@ -49,9 +49,7 @@ Accessible admin panel with:
 - Unanswered help requests are marked as **Unresolved** after a timeout.
 - Status lifecycle: `Pending → Resolved / Unresolved`.
 
-# 🧠 Human-in-the-Loop AI Supervisor
 
-This is a simulated AI support system built for the Frontdesk Engineering Test. It features a real-time call simulation interface using LiveKit, an AI agent, escalation to a human supervisor, and a dynamic knowledge base.
 
 ---
 
